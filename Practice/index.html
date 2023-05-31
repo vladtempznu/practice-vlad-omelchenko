@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html">        
+        <title>Practice HTML/CSS</title>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./circle.css">
+        <link rel="stylesheet" href="./fonts/stylesheet.css"  type="text/css" charset="utf-8" >
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="jquery-3.7.0.js"></script>
+    </head>
+
+    <body>
+        <div id="hoverDiv" class="fixedHover">
+            <div class="hoverBtn">
+                <i class="arrow"></i>
+            </div>
+        </div>
+
+        <div id="start" class="header">
+            <div class="container">
+                <div class="navBar">
+                    <div class="logo">BOUNCY</div>
+                    <div class="navBarLinksSection">
+                        <a class="navBarLink navBarLinkRounded" href="#aboutUs">Hello</a>
+                        <a class="navBarLink" href="#detailsAboutBouncy">About</a>
+                        <a class="navBarLink" href="#services">Services</a>
+                        <a class="navBarLink" href="#portfolio">Portfolio</a>
+                        <a class="navBarLink" href="#team">Team</a>
+                        <a class="navBarLink" href="#blog">Blog</a>
+                        <a class="navBarLink" href="#contactUs">Contact</a>
+                    </div>
+                    <div class="dropdownNavBtn" onclick="openDropdown()">
+                    </div>
+                    
+                </div>
+                <div id="dropdownNavBar" class="dropdownNavBar">
+                    <a class="navBarLink" href="#aboutUs">Hello</a>
+                    <a class="navBarLink" href="#detailsAboutBouncy">About</a>
+                    <a class="navBarLink" href="#services">Services</a>
+                    <a class="navBarLink" href="#portfolio">Portfolio</a>
+                    <a class="navBarLink" href="#team">Team</a>
+                    <a class="navBarLink" href="#blog">Blog</a>
+                    <a class="navBarLink" href="#contactUs">Contact</a>
+                </div>
+                <div class="content">
+                    <h1 class="contentTitle">WE ARE CODE CAFE</h1>
+                    <p class="contentIntro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p> 
+                </div>
+            </div>    
+        </div>         
+
+        <div id="aboutUs" class="whiteSection">
+            <div class="container">
+                <div class="wrapper col-md-8">
+                    <div class="aboutUsInfo">
+                        <h2 class="darkTitle">THIS IS BOUNCY</h2>
+                        <p class="darkIntro">
+                            At vero eos et accusamus et iusto odio 
+                            dignissimos ducimus qui blanditiis praesentium 
+                            voluptatum deleniti atque corrupti quos dolores et quas
+                            molestias excepturi sint occaecati cupiditate non provident, 
+                            similique sunt in culpa qui officia deserunt mollitia animi, 
+                            id est laborum et dolorum fuga. Et harum quidem rerum facilis est 
+                            et expedita distinctio. 
+                        </p>
+                        <a class="readMoreLink" href="#detailsAboutBouncy">Read More</a>
+                    </div>
+                    <img src="img/ipad.png" class="iPad" alt="iPad"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="detailsAboutBouncy" class="lightSection">
+            <div class="container">
+                <div class="wrapperVertical">
+                    <h2 class="darkTitle center">DETAILS ABOUT BOUNCY</h2>
+                    <p class="darkIntro center">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <img class="iconImg" src="img/heart.png" alt="heart"/>
+                        </div>
+                        <div class="icon iconGray">
+                            <img class="iconImg2" src="img/mouse.png" alt="mouse"/>
+                        </div>
+                        <div class="icon iconGray">
+                            <img class="iconImg2" src="img/lamp.png" alt="lamp"/>
+                        </div>
+                    </div>
+                    <h3 class="creativeIdeasTitle offset-md-1">Creative Ideas</h3>
+                    <div class="creativeIdeas offset-md-1 col-md-9">
+                        <p class="creativeIdeasText col-md-4">
+                            At <span class="spanGreen">vero</span> eos et accusamus et iusto odio 
+                            dignissimos <span class="spanDark">ducimus</span> qui blanditiis praesentium
+                             voluptatum deleniti atque corrupti 
+                             quos dolores
+                        </p>
+                        <p class="creativeIdeasText2 col-md-6">
+                            At vero eos et accusamus et iusto odio 
+                            dignissimos ducimus qui blanditiis praesentium
+                             voluptatum deleniti atque <span class="spanDark">corrupti 
+                             quos</span> dolores et quas molestias <span class="spanGreen">excepturi</span> sint 
+                             occaecati cupiditate non provident, <span class="spanDark">similique</span> sunt 
+                             in culpa qui officia deserunt mollitia 
+                             animi, id est laborum et dolorum fuga. 
+                             Et harum quidem r
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="whiteSection" style="padding-bottom: 0;" title="featuredProjects">
+            <div class="container">
+                <div class="wrapperVertical">
+                    <h2 class="darkTitle center">FEATURED PROJECTS</h2>
+                    <p class="darkIntro center">
+                        At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium
+                    </p>
+                </div>
+            </div>
+            <div class="imgsContainer">
+                <div class="imgBox">
+                    <img class="featuredImg" src="img/featured.png" alt="featured work"/>
+                </div>
+                <div class="imgBox">
+                    <img class="featuredImg" src="img/featuredVintage.png" alt="featured work vintage"/>
+                    <p class="imgText">VINTAGE</p>
+                </div>
+                <div class="imgBox">
+                    <img class="featuredImg" src="img/featuredBranding.png" alt="featured work branding"/>
+                    <p class="imgText">BRANDING</p>
+                </div>
+            </div>
+        </div>
+        <div class="foldFooter">
+            <div class="container">
+                <div class="wrapper wrapperCTA offset-md-1 col-md-10">
+                    <p class="foldText">
+                        At vero eos et <span>accusamus</span> et iusto odio 
+                        dignissimos ducimus qui blanditiis
+                    </p>
+                    <a class="ctaLink ctaFeaturedLink" href="#">Submit now</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="services" class="lightSection">
+            <div class="container">
+                <div class="wrapperVertical">
+                    <h2 class="darkTitle center">OUR SERVICES</h2>
+                    <p class="darkIntro center">
+                        At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium
+                    </p>
+                    <div class="wrapper offset-md-1 col-md-10">
+                        <div class="serviceIcons">
+                            <img class="serviceImg" src="img/serviceIcon1.png" alt="service icon"/>
+                            <img class="serviceImg" src="img/serviceIcon2.png" alt="service icon 2"/>
+                            <img class="serviceImg" src="img/serviceIcon3.png" alt="service icon 3"/>
+                            <img class="serviceImg" src="img/serviceIcon4.png" alt="service icon 4"/>
+                        </div>
+                        <div class="ourServicesInfo col-md-5">
+                            <h3 class="darkTitle">Graphic Design</h3>
+                            <p class="darkIntro">
+                                At vero eos et accusamus et iusto odio 
+                                dignissimos ducimus qui blanditiis praesentium 
+                                voluptatum deleniti</p>
+                            <p class="darkIntro" style="margin-bottom: 0;">quos dolores et quas
+                                molestias excepturi sint occaecati cupiditate non provident, 
+                                similique sunt in culpa qui officia deserunt mollitia animi, 
+                                id est laborum et dolorum fuga.
+                            </p>
+                        </div>
+                        <div class="skills">
+                            <div class="c100 p60 green">
+                                <span>60%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <div class="c100 p75 green">
+                                <span>75%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <div class="c100 p80 green">
+                                <span>80%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offsetContainer">
+            <div class="teamQuotes">  
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="impressedInfo">
+                            <h2 class="whiteTitle">IMPRESSED?</h2>
+                            <p class="lightGrayIntro col-md-10">At vero eos et accusamus et iusto odio 
+                            dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti 
+                            quos dolores et quas molestias</p>
+                            <h4 class="quoteName">-<span class="spanQuote"> Abdullah Noman</span></h4>
+                            <h4 class="quoteNameAdd">CREATIVE DIRECTOR, <span class="spanGreen200">CODE CAFE</span></h4>
+                        </div>                               
+                    </div>
+                </div>
+            </div>
+            <div class="offsetImgContainer">
+                <img class="monitor" src="img/monitor.png" alt="monitor"/>   
+            </div>
+        </div>
+
+        <div id="portfolio" class="lightSection">
+            <div class="container">
+                <div class="wrapperVertical">
+                    <h2 class="darkTitle center">PORTFOLIO</h2>
+                    <p class="darkIntro center">
+                        At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium
+                    </p>
+                    <div class="portfolioBar">
+                        <button id="allWorks" class="portfolioTab activeTab" onclick="choosePortfolio(event, 'allWorks')">All works</button>
+                        <button id="print" class="portfolioTab" onclick="choosePortfolio(event, 'print')">Print</button>
+                        <button id="identity" class="portfolioTab" onclick="choosePortfolio(event, 'identity')">Identity</button>
+                        <button id="branding" class="portfolioTab" onclick="choosePortfolio(event, 'branding')">Branding</button>
+                        <button id="web" class="portfolioTab" onclick="choosePortfolio(event, 'web')">Web</button>
+                        <button id="html" class="portfolioTab" onclick="choosePortfolio(event, 'html')">HTML</button>
+                        <button id="wp" class="portfolioTab" onclick="choosePortfolio(event, 'wp')">Wordpress</button>
+                    </div>
+                    <div class="gridImgs horizontalScroll">
+                        <div class="gridImgsRow">
+                            <div class="gridImgsColumn">
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio1.png" alt="portfolio1"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos ducimus qui blanditiis praesentium</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio5.png" alt="portfolio5"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos ducimus qui</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio9.png" alt="portfolio9"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gridImgsColumn">
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio2.png" alt="portfolio2"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio6.png" alt="portfolio6"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio10.png" alt="portfolio10"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos ducimus qui</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gridImgsColumn">
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio3.png" alt="portfolio3"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio7.png" alt="portfolio7"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos ducimus qui blanditiis praesentium</p>
+                                            <div class="iconPort link"></div>
+                                            <div class="iconPort like"></div>    
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio11.png" alt="portfolio11"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto </p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gridImgsColumn">
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio4.png" alt="portfolio4"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos ducimus qui</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio8.png" alt="portfolio8"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                                <div class="portImgContainer">
+                                    <img class="portImg" src="img/portfolio12.png" alt="portfolio12"/>
+                                    <div class="portfolioHoverLayer">
+                                        <h3 class="imgPortTitle">TITLE HERE</h3>
+                                        <p class="imgPortIntro">At vero eos et accusamus et iusto odio 
+                                            dignissimos ducimus</p>
+                                        <div class="iconPort link"></div>
+                                        <div class="iconPort like"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolioCTA">
+                        <p class="ctaText">
+                            At vero eos et accusamus et iusto odio 
+                            dignissimos ducimus qui blanditiis
+                        </p>
+                        <div class="linkCenter">
+                            <a class="ctaLink" href="#">Start Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="team" class="whiteSection">
+            <div class="container">
+                <div class="wrapperVertical">
+                    <h2 class="darkTitle center">THE TEAM</h2>
+                    <p class="darkIntro center">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium</p>
+                    <div class="wrapper col-md-10">
+                        <div class="memberImg">
+                            <img src="img/teamMember.png" alt="member"/>
+                        </div>
+                        <div class="memberInfo col-sm-5">
+                            <div class="verticalLine">
+                                <h5 class="nameSurname">Abdullah Noman</h5>
+                                <h6 class="memberPost">CREATIVE DIRECTOR, CODE CAFE</h6>
+                            </div>
+                            <p class="memberText">
+                                At vero eos et accusamus et iusto odio 
+                                dignissimos ducimus qui blanditiis praesentium
+                            </p>
+                            <div class="stats">
+                                <div class="stat">
+                                    <div class="statText">
+                                        <p class="statType">BRANDING</p>
+                                        <p class="percentage">80%</p>
+                                    </div>
+                                    <div class="statLine">
+                                        <div class="statLineFill80"></div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="statText">
+                                        <p class="statType">WEB DESIGN</p>
+                                        <p class="percentage">65%</p>
+                                    </div>
+                                    <div class="statLine">
+                                        <div class="statLineFill65"></div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="statText">
+                                        <p class="statType">USER INTERFACE</p>
+                                        <p class="percentage">75%</p>
+                                    </div>
+                                    <div class="statLine">
+                                        <div class="statLineFill75"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span id="teamDot1" class="dot active" name="team" onclick="change(event, 'teamDot1', 'team')"></span>
+                        <span id="teamDot2" class="dot" name="team" onclick="change(event, 'teamDot2', 'team')"></span>
+                        <span id="teamDot3" class="dot" name="team" onclick="change(event, 'teamDot3', 'team')"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="teamCTA">
+            <div class="container">
+                <h3 class="ctaText">Already love us? Let's talk!</h3>
+                <div class="linkCenter">
+                    <a class="ctaLink" href="#contactUs">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonials" class="lightSection">
+            <div class="container">
+                <h2 class="darkTitle center">TESTIMONIALS</h2>
+                <p class="darkIntro center">At vero eos et accusamus et iusto odio 
+                    dignissimos ducimus qui blanditiis praesentium</p>
+                <div class="wrapper card">
+                    <div class="cardContainer offset-md-1">
+                        <img class="roundImg" src="img/testimonials.png" alt="testimonials"/>
+                        <div class="testimonialsInfo col-md-8">
+                            <p class="testimonialsText">
+                                At vero eos et accusamus et iusto odio 
+                                dignissimos ducimus qui blanditiis 
+                                praesentium voluptatum deleniti atque corrupti 
+                                quos dolores et quas molestias excepturi 
+                                sint occaecati cupiditate non provident, 
+                                similique sunt in culpa qui officia deserunt 
+                                mollitia.
+                            </p>
+                            <h5 class="testName">PARTHO</h5>
+                            <h6 class="testPost">FOUNDER, ARTWAYS BD</h6>
+                        </div>
+                    </div>
+                    <div class="dots cardDots">
+                        <span id="testDot1" class="dot active" name="test" onclick="change(event, 'testDot1', 'test')"></span>
+                        <span id="testDot2" class="dot" name="test" onclick="change(event, 'testDot2', 'test')"></span>
+                        <span id="testDot3" class="dot" name="test" onclick="change(event, 'testDot3', 'test')"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="blog">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="blogInfo">
+                        <h2 class="whiteTitle">LATEST NEWS</h2>
+                        <p class="lightGrayIntro col-md-5">At vero eos et accusamus et iusto odio 
+                            dignissimos ducimus qui blanditiis praesentium</p>
+                        <h3 class="topicTitle offset-md-1">The trending Landing Pages</h3>
+                        <p class="topicAuthor offset-md-1">BY <span class="spanGreen200">KABIR UDDIN</span></p>
+                        <p class="topicStats offset-md-1">6950 Likes - 243 Comments - 703 Shares</p>
+                        <p class="topicText offset-md-1 col-md-6">At vero eos et accusamus et iusto odio dignissimos 
+                            ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti 
+                            quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
+                            similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et 
+                            dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio... 
+                        </p>
+                        <a class="topicLink offset-md-1" href="#">+ Read More</a>
+                    </div>
+                    <div class="newsDots">
+                        <div id="newsDot1" class="newsDot active" onclick="changeNews(event, 'newsDot1')"></div>
+                        <div id="newsDot2" class="newsDot" onclick="changeNews(event, 'newsDot2')"></div>
+                        <div id="newsDot3" class="newsDot" onclick="changeNews(event, 'newsDot3')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pricing" class="lightSection">
+            <div class="container">
+                <div class="wrapperVertical">
+                    <h2 class="darkTitle center">OUR PRICES</h2>
+                    <p class="darkIntro center">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium</p>
+                    <div class="wrapper cardWrapper">
+                        <div class="priceCard">
+                            <div class="planNote">
+                                <h3 class="planTitle">PREMIUM</h3>
+                            </div>
+                            <div class="priceInfo">
+                                <h4 class="price">$ 60</h4>
+                                <p class="perMonth">Per Month</p>
+                            </div>
+                        </div>
+                        <div class="priceCard">
+                            <div class="mainCardOffer">
+                                <div class="offerList">
+                                <p class="priceCardText">Full Branding</p>
+                                <p class="priceCardText">Project Management</p>
+                                <p class="priceCardText">Unlimited Revisions</p>
+                                <p class="priceCardText">24/7 h Services</p>
+                                <p class="priceCardText">Free Domain</p>
+                                <p class="priceCardText">Free Hosting</p>
+                                </div>
+                            </div>
+                            <div class="planNote">
+                                <a class="priceLink" href="#">Let's Start ></a>
+                            </div>                          
+                        </div>
+                        <div class="priceCard">
+                            <div class="planNote">
+                                <h3 class="planTitle">EXCLUSIVE</h3>
+                            </div>
+                            <div class="priceInfo">
+                                <h4 class="price">$ 80</h4>
+                                <p class="perMonth">Per Month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <div class="container">
+                <h3 class="whiteTitle center">SUBSCRIBE US</h3>
+                <p class="lightGrayIntro center col-md-4">At vero eos et accusamus et iusto odio 
+                    dignissimos ducimus qui blanditiis praesentium
+                </p>
+                <form class="submission col-md-5">
+                    <input type="mail" placeholder="Email Address" class="submitInput"/>
+                    <button class="submitBtn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="contactUs" class="lightSection">
+            <div class="container">
+                <h2 class="darkTitle center">CONTACT US</h2>
+                 <p class="darkIntro center">At vero eos et accusamus et iusto odio 
+                    dignissimos ducimus qui blanditiis praesentium
+                </p>
+                <div class="wrapper contactWrapper col-md-9">
+                    <div class="contactCard">
+                        <div class="contactCardInfo">
+                            <img class="contactImg" src="img/email.png" alt="email"/>
+                            <h3 class="contactCardTitle">EMAIL</h3>
+                            <p class="contactCardText">hello@codecafe.com 
+                                Personal@codecafe.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contactCard">
+                        <div class="contactCardInfo">
+                            <img class="contactImg" src="img/office.png" alt="address"/>
+                            <h3 class="contactCardTitle">OUR OFFICE</h3>
+                            <p class="contactCardText">240 Bhatikhana, 8200 Barisal
+                                Bangladesh
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contactCard">
+                        <div class="contactCardInfo">
+                            <img class="contactImg" src="img/phone.png" alt="phone"/>
+                            <h3 class="contactCardTitle">PHONE</h3>
+                            <p class="contactCardText">+00 11 66 99 66 44
+                                11 99 66 44 065
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="submit" class="whiteSection">
+            <div class="container">
+                <form class="wrapperVertical col-md-9">
+                    <div class="wrapperInput">
+                        <input type="text" placeholder="Your name" class="msgInput"/>
+                        <input type="mail" placeholder="Email address" class="msgInput"/>
+                        <input type="subject" placeholder="Subject" class="msgInput"/>
+                    </div>
+                    <textarea class="msgArea" name="text" cols="40" rows="8"></textarea>
+                    <button class="msgBtn">SUBMIT NOW</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6511.141190614527!2d90.35059770834694!3d22.700929416588817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x37553407fbece487%3A0x5d069b9599d4414a!2z0JHQsNGA0LjRgdCw0LssINCR0LDQvdCz0LvQsNC00LXRiA!3m2!1d22.7010021!2d90.3534511!5e0!3m2!1sru!2sua!4v1685195486408!5m2!1sru!2sua" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map" class="mapLayer" onclick="hideMapLayer()">
+                <div class="mapInfo">
+                    <p class="mapText">FIND US ON THE MAP</p>
+                    <div class="mapBtn">
+                        <i class="arrowSmall"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <h1 class="logo footerLogo">BOUNCY</h1>
+                <p class="footerCopyright">Copyright 2015. All rights Reserved</p>
+                <div class="wrapper footerSocials">
+                    <a href="#">
+                        <img src="img/ facebook.png" alt="facebook"/>
+                    </a>
+                    <a href="#">
+                        <img src="img/twitter.png" alt="twitter"/>
+                    </a>
+                    <a href="#">
+                        <img src="img/linkedin.png" alt="linkedin"/>
+                    </a>
+                    <a href="#">
+                        <img src="img/instagramm.png" alt="instagram"/>
+                    </a>
+                    <a href="#">
+                        <img src="img/vimeo.png" alt="vimeo"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>
